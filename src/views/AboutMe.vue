@@ -4,11 +4,9 @@
       <!-- section title -->
       <h2 class="section-title wow fadeInUp">About me</h2>
 
-      <div class="spacer" data-height="60"></div>
-
       <div class="row">
         <div class="col">
-          <div class="rounded bg-white shadow-dark padding-30">
+          <div class="rounded bg-white shadow-dark p-5">
             <div class="row">
               <div class="col-md-6">
                 <!-- about text -->

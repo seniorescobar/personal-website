@@ -7,7 +7,9 @@
       <h3 class="title">
         <slot name="title"></slot> @ <slot name="employer"></slot>
       </h3>
-      <slot></slot>
+      <p class="text-justify">
+        <slot></slot>
+      </p>
     </div>
   </div>
 </template>
