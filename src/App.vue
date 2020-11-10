@@ -17,6 +17,24 @@
               <!-- info -->
               <h1 class="mb-2 mt-0">Aleksandar Jelić</h1>
               <span>Web Developer</span>
+
+              <ul class="social-icons light list-inline mb-0 mt-4">
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://www.linkedin.com/in/aleksandar-jeli%C4%87-b0445b76/">
+                    <font-awesome-icon :icon="['fab', 'linkedin']" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a target="_blank" href="https://github.com/seniorescobar">
+                    <font-awesome-icon :icon="['fab', 'github']" />
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a target="_blank" href="mailto:aleksandar@jelic.email">
+                    <font-awesome-icon :icon="['fas', 'envelope']" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
