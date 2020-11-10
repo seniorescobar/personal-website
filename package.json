@@ -19,7 +19,8 @@
     "parallax-js": "^3.1.0",
     "popper.js": "^1.16.1",
     "simple-line-icons": "^2.5.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-router": "^3.4.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
