@@ -1,8 +1,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import '../node_modules/bootstrap/scss/bootstrap.scss';
-import './assets/css/style.scss'
+// css
+import 'bootstrap'
+import '../node_modules/simple-line-icons/scss/simple-line-icons.scss';
+import './assets/scss/style.scss'
+
+// js
+import 'parallax-js' // import '../node_modules/parallax-js/dist/parallax.min.js'
 
 const app = createApp(App)
 

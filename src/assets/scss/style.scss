@@ -1,0 +1,25 @@
+$primary: #FF4C60;
+
+// buttons
+$btn-border-radius: 2rem;
+$btn-font-weight: 700;
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 2rem;
+
+// progress
+$progress-height: 0.5rem;
+$progress-border-radius: 0.75rem;
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+.border-width-3 {
+  border-width: 3px !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic');
+@import "mixins";
+@import "base";
+@import "header";
+@import "main";
+@import "elements";
+@import "responsive";
