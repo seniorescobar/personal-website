@@ -57,7 +57,7 @@
               with the team and the tech stack, I found it difficult settling
               in, being so far away from my home country. Since there was no
               option to work remotely, I found no other solution but to move
-              back home and wait for an oppor- tunity that would allow me to
+              back home and wait for an opportunity that would allow me to
               continue something similar, but from home.
             </template>
           </timeline-item>
