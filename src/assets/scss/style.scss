@@ -10,11 +10,10 @@ $btn-padding-x: 2rem;
 $progress-height: 0.5rem;
 $progress-border-radius: 0.75rem;
 
-@import 'node_modules/bootstrap/scss/bootstrap';
+// utilities
+$border-radius-lg: 1.5rem;
 
-.border-width-3 {
-  border-width: 3px !important;
-}
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic');
 @import "mixins";
@@ -22,4 +21,4 @@ $progress-border-radius: 0.75rem;
 @import "header";
 @import "main";
 @import "elements";
-@import "responsive";
+@import "timeline";

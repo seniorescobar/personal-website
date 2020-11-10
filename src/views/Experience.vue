@@ -8,7 +8,7 @@
         <div class="col">
           <!-- timeline wrapper -->
           <div
-            class="timeline exp bg-white rounded shadow-dark p-5 overflow-hidden"
+            class="timeline exp bg-white rounded-lg shadow-dark p-5 overflow-hidden"
           >
             <timeline-item>
               <template v-slot:time>Jul 2013 - Oct 2017</template>
@@ -47,7 +47,7 @@
                   where I worked 4 days per week on a Golang back-end, used for
                   a festivals mobile app. Despite enjoying much more
                   responsibility, I ended up leaving after just 4 months, not
-                  being fully satisfied with the working environment.
+                  being fully satisfied with the work environment.
               </template>
             </timeline-item>
 

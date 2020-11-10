@@ -2,7 +2,7 @@
   <div class="mb-3">
     <div class="d-flex justify-content-between">
       <h4 class="mb-3 mt-0">{{ name }}</h4>
-      <span class="">{{ skill }}%</span>
+      <!-- <span class="">{{ skill }}%</span> -->
     </div>
     <div class="progress">
       <div

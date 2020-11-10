@@ -6,7 +6,7 @@
 
       <div class="row">
         <div class="col">
-          <div class="rounded bg-white shadow-dark p-5">
+          <div class="rounded-lg bg-white shadow-dark p-5">
             <div class="row">
               <div class="col-md-6">
                 <!-- about text -->
