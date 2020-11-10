@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3 offset-lg-1">
+      <div id="sidebar" class="col-lg-3 offset-lg-1">
         <!-- section home -->
         <section id="home" class="home d-flex light align-items-center">
           <div class="container">
@@ -9,9 +9,9 @@
             <div class="intro">
               <!-- avatar image -->
               <img
-                src="./assets/images/avatar-2.svg"
-                alt="Bolby"
-                class="mb-4"
+                src="./assets/images/memoji.png"
+                alt="Profile picture"
+                class="rounded-circle"
               />
 
               <!-- info -->
@@ -39,7 +39,7 @@
           </div>
         </section>
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-7 offset-lg-4">
         <!-- section about -->
         <AboutMe />
 
@@ -67,3 +67,17 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+@include media-breakpoint-up(lg) {
+	#sidebar {
+		position: fixed;
+	}
+}
+
+img {
+	width: 320px;
+}
+</style>
