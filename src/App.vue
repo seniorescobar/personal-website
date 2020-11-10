@@ -11,7 +11,7 @@
               <img
                 src="./assets/images/memoji.png"
                 alt="Profile picture"
-                class="rounded-circle"
+                class="img-fluid rounded-circle"
               />
 
               <!-- info -->
