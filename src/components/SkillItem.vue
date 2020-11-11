@@ -1,13 +1,13 @@
 <template>
   <div class="mb-3">
     <div class="d-flex justify-content-between">
-      <h4 class="mb-3 mt-0">{{ name }}</h4>
-      <!-- <span class="">{{ skill }}%</span> -->
+      <span class="h5 text-left mb-3 mt-0">{{ name }}</span>
+      <span class="text-left">{{ text }}</span>
     </div>
     <div class="progress">
       <div
         class="progress-bar"
-        :class="'bg-' + background"
+        :class="'bg-' + color"
         role="progressbar"
         aria-valuemin="0"
         aria-valuemax="100"
@@ -23,7 +23,8 @@ export default {
     props: [
         "name",
         "skill",
-        "background",
+        "color",
+        "text",
     ]
 }
 </script>

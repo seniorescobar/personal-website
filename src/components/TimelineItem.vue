@@ -2,10 +2,11 @@
   <div class="timeline-container pb-3">
     <div class="content">
       <span class="time text-secondary">
-        <slot name="time"></slot>
+        {{ time }}
       </span>
-      <h5 class="my-1">
-        <slot name="title"></slot> @ <slot name="employer"></slot>
+      <h5 class="my-1">{{ title }}
+         <div v-if="at.length > 50">{{ at }}</div>
+         <span v-else>@ {{ at }}</span>
       </h5>
       <p class="text-justify p-0">
         <slot></slot>
@@ -13,6 +14,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ["time", "title", "at"],
+};
+</script>
 
 <style lang="scss" scoped>
 @import "../assets/scss/variables";

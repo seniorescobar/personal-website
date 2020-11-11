@@ -1,7 +1,10 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <div id="sidebar" class="col-12 col-xl-3 offset-xl-1 d-flex align-items-center justify-content-center mt-5 mt-lg-0">
+      <div
+        id="sidebar"
+        class="col-12 col-xl-3 offset-xl-1 d-flex align-items-center justify-content-center mt-5 mt-lg-0"
+      >
         <div class="row text-center">
           <div class="col-md-3 col-lg-12">
             <img
@@ -10,7 +13,9 @@
               class="img-fluid rounded-circle mb-4"
             />
           </div>
-          <div class="col-md-9 col-lg-12 text-center text-md-left text-lg-center">
+          <div
+            class="col-md-9 col-lg-12 text-center text-md-left text-lg-center"
+          >
             <h1 class="text-dark mb-2 mt-0">Aleksandar Jelić</h1>
             <span>Web Developer</span>
 
@@ -47,8 +52,15 @@
         </div>
       </div>
       <div class="col-xl-6 offset-xl-5 pt-xl-5">
-        <AboutMe />
-        <Experience />
+        <the-section id="about" title="About me">
+          <AboutMe />
+        </the-section>
+        <the-section id="experience" title="Experience">
+          <Experience />
+        </the-section>
+        <the-section id="education" title="Education">
+          <Education />
+        </the-section>
       </div>
     </div>
 
@@ -59,13 +71,17 @@
 </template>
 
 <script>
+import TheSection from "./components/TheSection.vue";
 import AboutMe from "./views/AboutMe.vue";
 import Experience from "./views/Experience.vue";
+import Education from "./views/Education.vue";
 
 export default {
   components: {
+    TheSection,
     AboutMe,
     Experience,
+    Education,
   },
 };
 </script>
@@ -84,8 +100,8 @@ export default {
 
 @include media-breakpoint-up(xl) {
   #sidebar {
-	position: fixed;
-	min-height: 100vh;
+    position: fixed;
+    min-height: 100vh;
   }
 }
 
