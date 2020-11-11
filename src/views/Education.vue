@@ -13,24 +13,6 @@
           title="Computer and Information Science"
           at="University of Ljubljana, Faculty of Computer and Information Science"
         >
-          <div class="row">
-            <div class="col">
-              <a
-                target="_blank"
-                href="https://www.fri.uni-lj.si/en/course/63267"
-              ></a>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col">
-              <a
-                target="_blank"
-                href="https://www.fri.uni-lj.si/en/course/63283"
-              ></a>
-            </div>
-          </div>
-
           <p>
             Being the type of person to always put practical work before
             studies, I plan to pass my last 2 remaining exams at the end of
@@ -73,11 +55,13 @@ export default {
         name: "Computability and Computational Complexity",
         date: new Date("2021-01-22"),
         color: "info",
+        link: "https://www.fri.uni-lj.si/en/course/63283",
       },
       {
         name: "Machine Perception",
         date: new Date("2021-01-26"),
         color: "warning",
+        link: "https://www.fri.uni-lj.si/en/course/63267",
       },
       {
         name: "Diploma Thesis",
