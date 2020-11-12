@@ -81,7 +81,7 @@ export default {
     for (const i in exams) {
       const e = exams[i];
       e.progress = (today - start) / (e.date - start);
-      e.days = Math.round(toDays(e.date - today));
+      e.days = Math.floor(toDays(e.date - today));
     }
 
     return { exams };

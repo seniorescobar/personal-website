@@ -30,7 +30,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/scss/variables";
 
-a {
+a, a:hover {
   color: $body-color;
 }
 </style>
