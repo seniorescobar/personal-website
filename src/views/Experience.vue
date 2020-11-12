@@ -8,6 +8,7 @@
           :at="{name:'Applike (JustDice)', url: 'https://justdice.io/'}"
           city="Hamburg"
           country="🇩🇪"
+          :tags="['go', 'aws', 'terraform']"
         >
           <template v-slot>
             At AppLike I worked on a Golang back-end for a platform focused on
@@ -27,6 +28,7 @@
           :at="{name: 'Viberate', url: 'https://www.viberate.com/'}"
           city="Ljubljana"
           country="🇸🇮"
+          :tags="['go']"
         >
           <template v-slot>
             After taking some time off to fully focus on my uni studies, I
@@ -43,6 +45,7 @@
           :at="{name: 'Zemanta (Outbrain)', url: 'https://www.zemanta.com/'}"
           city="Ljubljana"
           country="🇸🇮"
+          :tags="['go', 'aws']"
         >
           <template v-slot>
             At Zemanta, an Outbrain company, I found it interesting and very
@@ -58,6 +61,7 @@
           :at="{name: 'ISL Online', url: 'https://www.islonline.com/'}"
           city="Ljubljana"
           country="🇸🇮"
+          :tags="['go', 'html', 'css', 'php', 'postgresql']"
         >
           <template v-slot>
             Landing my first part time job in tech at just 16 years old, I

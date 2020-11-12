@@ -1,27 +1,30 @@
 <template>
-  <div class="timeline-container pb-3">
-    <div class="content">
-      <span class="time text-secondary">
-        {{ time }}
+  <div class="timeline-container pb-4">
+    <span class="time text-secondary">
+      {{ time }}
+    </span>
+    <h4 class="my-1">{{ title }}</h4>
+    <div>
+      <span class="h5 mr-1">
+        <a :href="at.url" target="_blank" class="at text-secondary">{{
+          at.name
+        }}</a>
       </span>
-      <h4 class="my-1">{{ title }}</h4>
-      <div>
-        <span class="h5 mr-1">
-          <a :href="at.url" target="_blank" class="text-secondary">{{ at.name }}</a>
-        </span>
-        <span class="font-italic mr-1">{{ city }}</span>
-        <span>{{ country }}</span>
-      </div>
-      <p class="text-justify p-0">
-        <slot></slot>
-      </p>
+      <span class="country">{{ country }}</span>
+      <!-- <span class="city ml-1 text-muted">{{ city }}</span> -->
+    </div>
+    <p class="text-justify p-0 mb-0">
+      <slot></slot>
+    </p>
+    <div>
+      <span v-for="tag in tags" :key="tag" class="badge badge-primary badge-pill mr-1">{{ tag }}</span>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["time", "title", "at", "city", "country"],
+  props: ["time", "title", "at", "city", "country", "tags"],
 };
 </script>
 
@@ -54,10 +57,8 @@ export default {
     }
   }
 
-  .content {
-    .time {
-      font-size: 14px;
-    }
+  .time {
+    font-size: 14px;
   }
 }
 </style>
