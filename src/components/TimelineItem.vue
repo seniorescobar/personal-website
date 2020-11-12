@@ -4,10 +4,14 @@
       <span class="time text-secondary">
         {{ time }}
       </span>
-      <h5 class="my-1">{{ title }}
-         <div v-if="at.length > 50">{{ at }}</div>
-         <span v-else>@ {{ at }}</span>
-      </h5>
+      <h4 class="my-1">{{ title }}</h4>
+      <div>
+        <span class="h5 mr-1">
+          <a :href="at.url" target="_blank" class="text-secondary">{{ at.name }}</a>
+        </span>
+        <span class="font-italic mr-1">{{ city }}</span>
+        <span>{{ country }}</span>
+      </div>
       <p class="text-justify p-0">
         <slot></slot>
       </p>
@@ -17,7 +21,7 @@
 
 <script>
 export default {
-  props: ["time", "title", "at"],
+  props: ["time", "title", "at", "city", "country"],
 };
 </script>
 

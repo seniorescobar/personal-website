@@ -4,17 +4,17 @@
       <the-card>
         <div class="row">
           <div class="col-xl-6">
-            <p>
+            <p class="text-justify">
               I’m a 23 year old web developer from Slovenia, working mostly with
               the Go Programming Language, which I have adored ever since
               finding out about it a few years ago.
             </p>
-            <p>
+            <p class="text-justify">
               Among other platforms I find immensely interesting, is AWS which I
               was increasingly exposed to working in companies building highly
               performant and scalable software.
             </p>
-            <p>
+            <p class="text-justify">
               Recently I have also started getting a feel of front-end
               development, using the Vue.js framework, but have only used it for
               my personal projects.

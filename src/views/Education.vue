@@ -3,15 +3,9 @@
     <div class="col">
       <the-card class="timeline edu">
         <timeline-item
-          time="Sep 2011 - Jun 2015"
-          title="Technical Gymnasium"
-          at="Vegova, Upper Secondary School of Electrical and Computer Engineering and Technical Gymnasium"
-        >
-        </timeline-item>
-        <timeline-item
           time="Oct 2015 - Feb 2021"
           title="Computer and Information Science"
-          at="University of Ljubljana, Faculty of Computer and Information Science"
+          :at="{name: 'University of Ljubljana, Faculty of Computer and Information Science', url: 'https://www.fri.uni-lj.si/en'}"
         >
           <p>
             Being the type of person to always put practical work before
@@ -25,6 +19,7 @@
                 v-for="exam in exams"
                 :key="exam.name"
                 :name="exam.name"
+                :url="exam.url"
                 :skill="exam.progress * 100"
                 :color="exam.color"
                 :text="exam.days + ' days to go'"
@@ -32,6 +27,12 @@
               </skill-item>
             </div>
           </div>
+        </timeline-item>
+        <timeline-item
+          time="Sep 2011 - Jun 2015"
+          title="Technical Gymnasium"
+          :at="{name:'Vegova, Upper Secondary School of Electrical and Computer Engineering and Technical Gymnasium', url: 'https://www.vegova.si/'}"
+        >
         </timeline-item>
       </the-card>
     </div>
@@ -55,13 +56,13 @@ export default {
         name: "Computability and Computational Complexity",
         date: new Date("2021-01-22"),
         color: "info",
-        link: "https://www.fri.uni-lj.si/en/course/63283",
+        url: "https://www.fri.uni-lj.si/en/course/63283",
       },
       {
         name: "Machine Perception",
         date: new Date("2021-01-26"),
         color: "warning",
-        link: "https://www.fri.uni-lj.si/en/course/63267",
+        url: "https://www.fri.uni-lj.si/en/course/63267",
       },
       {
         name: "Diploma Thesis",
