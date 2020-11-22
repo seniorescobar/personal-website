@@ -30,13 +30,13 @@
             ></skill-item>
           </div>
         </div>
-        <div class="row mt-3">
+        <!-- <div class="row mt-3">
           <div class="col">
             <div class="mt-2">
               <a href="#" class="btn btn-primary">Download CV</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </the-card>
     </div>
   </div>
